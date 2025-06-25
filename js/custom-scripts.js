@@ -121,8 +121,18 @@ jQuery(function($) {
         fetch('/api/temperatures')
             .then(function(r){ return r.json(); })
             .then(function(data){
-                document.getElementById('temp-ext').textContent = data.exterieure + ' \u00B0C';
-                document.getElementById('temp-int').textContent = data.interieure + ' \u00B0C';
+                var eco = data.eco || {};
+                var code = data.code || {};
+
+                document.getElementById('temp-ext-eco').textContent = eco.tempExt + ' \u00B0C';
+                document.getElementById('hum-ext-eco').textContent = eco.humExt + ' %';
+                document.getElementById('temp-int-eco').textContent = eco.tempInt + ' \u00B0C';
+                document.getElementById('hum-int-eco').textContent = eco.humInt + ' %';
+
+                document.getElementById('temp-ext-code').textContent = code.tempExt + ' \u00B0C';
+                document.getElementById('hum-ext-code').textContent = code.humExt + ' %';
+                document.getElementById('temp-int-code').textContent = code.tempInt + ' \u00B0C';
+                document.getElementById('hum-int-code').textContent = code.humInt + ' %';
             })
             .catch(function(err){ console.error(err); });
     }
