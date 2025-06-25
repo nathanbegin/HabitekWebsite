@@ -13,6 +13,9 @@ jQuery(function($) {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 5
         }, 1000);
+        if ($('.navbar-toggle').is(':visible')) {
+            $('.navbar-collapse').collapse('hide');
+        }
         return false;
     });
  
@@ -113,6 +116,28 @@ jQuery(function($) {
     $("a[rel^='prettyPhoto']").prettyPhoto({
         social_tools: false
     });
+
+    function loadTemps() {
+        fetch('/api/temperatures')
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+                var eco = data.eco || {};
+                var code = data.code || {};
+
+                document.getElementById('temp-ext-eco').textContent = eco.tempExt + ' \u00B0C';
+                document.getElementById('hum-ext-eco').textContent = eco.humExt + ' %';
+                document.getElementById('temp-int-eco').textContent = eco.tempInt + ' \u00B0C';
+                document.getElementById('hum-int-eco').textContent = eco.humInt + ' %';
+
+                document.getElementById('temp-ext-code').textContent = code.tempExt + ' \u00B0C';
+                document.getElementById('hum-ext-code').textContent = code.humExt + ' %';
+                document.getElementById('temp-int-code').textContent = code.tempInt + ' \u00B0C';
+                document.getElementById('hum-int-code').textContent = code.humInt + ' %';
+            })
+            .catch(function(err){ console.error(err); });
+    }
+
+    loadTemps();
  
 
 });
