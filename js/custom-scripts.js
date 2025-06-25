@@ -13,6 +13,7 @@ jQuery(function($) {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 5
         }, 1000);
+        $('.navbar-collapse').collapse('hide');
         return false;
     });
  

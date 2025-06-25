@@ -258,9 +258,9 @@ background: #141414;
   color: #000;
 }
 #hero-banner{
-  background: #FFFFFF url('../images/banner/bg1.jpg') no-repeat 50% bottom;
+  background: #FFFFFF url('../bg1.jpg') no-repeat 50% bottom;
   aspect-ratio: auto;
-  background-size:1500px auto;     
+  background-size:1500px auto;
   }
 #hero-banner h2 {
   margin-top: 180px;
