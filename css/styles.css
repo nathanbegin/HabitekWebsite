@@ -170,7 +170,10 @@ color: #FFFFFF;
 }
 .navbar.navbar-default .navbar-brand {
   height: auto;
-  padding: 22px 15px 21px;
+  padding: 15px 10px;
+}
+.navbar.navbar-default .navbar-brand img {
+  max-height: 50px;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 color: #FFFFFF;
@@ -1129,6 +1132,13 @@ width: 31px;
 text-align: center;
 }
 #footer ul > li img.social-icon {
+  width: 24px;
+  height: 24px;
+}
+#header li.nav-instagram {
+  display: inline-block;
+}
+#header li.nav-instagram img.header-icon {
   width: 24px;
   height: 24px;
 }
