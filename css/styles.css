@@ -1097,3 +1097,12 @@ margin: 9px auto;
 padding: 7px 0 0;
 }
 }
+
+/* Responsive media for tablets and mobiles */
+@media only screen and (max-width: 768px) {
+  .responsive-media {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+}
