@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   color: #282828;
   line-height: 26px;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -1117,12 +1118,16 @@ width: 100px;
   margin: 0 -7.5px;
 }
 #footer ul > li {
- display: inline-block; 
+ display: inline-block;
 
  border: 1px solid rgba(255, 255, 255, 0.09);
 padding: 3px 0;
 width: 31px;
 text-align: center;
+}
+#footer ul > li img.social-icon {
+  width: 24px;
+  height: 24px;
 }
 @media only screen and (min-width: 768px) {
   #footer .social-icons {
@@ -1132,6 +1137,16 @@ text-align: center;
 .form-control {
   box-shadow: none;
   -webkit-box-shadow: none;
+}
+
+#commanditaires {
+  background: #f5f5f5;
+  padding: 60px 0;
+  text-align: center;
+}
+#commanditaires .sponsor-logo {
+  max-width: 150px;
+  margin: 15px auto;
 }
 @media only screen and (max-width: 480px) {
 #hero-banner {
