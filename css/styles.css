@@ -750,6 +750,12 @@ color: rgb(40, 141, 203);
 .team-wrapper .description h3 {
   color: rgb(40, 141, 203);
   }
+
+.team-wrapper .description .linkedin-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;
+}
   
 .download-now
 {
