@@ -15,6 +15,9 @@ body {
   line-height: 26px;
   overflow-x: hidden;
 }
+html {
+  overflow-x: hidden;
+}
 h1,
 h2,
 h3,
@@ -1143,6 +1146,9 @@ text-align: center;
   background: #f5f5f5;
   padding: 60px 0;
   text-align: center;
+}
+#commanditaires .section-header {
+  text-align: left;
 }
 #commanditaires .sponsor-logo {
   max-width: 150px;
