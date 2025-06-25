@@ -170,7 +170,7 @@ color: #FFFFFF;
 }
 .navbar.navbar-default .navbar-brand {
   height: auto;
-  padding: 15px 10px;
+  padding: 15px 10px 15px 0;
 }
 .navbar.navbar-default .navbar-brand img {
   max-height: 50px;
@@ -1132,13 +1132,6 @@ width: 31px;
 text-align: center;
 }
 #footer ul > li img.social-icon {
-  width: 24px;
-  height: 24px;
-}
-#header li.nav-instagram {
-  display: inline-block;
-}
-#header li.nav-instagram img.header-icon {
   width: 24px;
   height: 24px;
 }
