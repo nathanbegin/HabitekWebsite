@@ -116,6 +116,18 @@ jQuery(function($) {
     $("a[rel^='prettyPhoto']").prettyPhoto({
         social_tools: false
     });
+
+    function loadTemps() {
+        fetch('/api/temperatures')
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+                document.getElementById('temp-ext').textContent = data.exterieure + ' \u00B0C';
+                document.getElementById('temp-int').textContent = data.interieure + ' \u00B0C';
+            })
+            .catch(function(err){ console.error(err); });
+    }
+
+    loadTemps();
  
 
 });

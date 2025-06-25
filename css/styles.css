@@ -289,6 +289,22 @@ background: #141414;
   color: #085C98;
   background: #fff;
 }
+
+#stats {
+  padding: 80px 0;
+  background: #F7F7F7;
+  text-align: center;
+}
+
+#stats h2 {
+  margin-bottom: 30px;
+}
+
+#stats .stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #085C98;
+}
 #cta2 {
   background: #45b1da;
   color: #fff;
@@ -667,12 +683,12 @@ background-color: rgb(40, 141, 203);
 
 
 .team-wrapper .description {
-padding: 30px 20px 20px;
-text-align: center;
-border-bottom: 1px solid #fff;
-border-right: 1px solid #fff;
-border-left: 1px solid #fff;
-color: 1px solid #fff;
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  color: 1px solid #fff;
 }
 .team-wrapper .description p {
   color:#141414;
