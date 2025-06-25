@@ -1,0 +1,12 @@
+{
+  "name": "habitek-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:thumbs": "node scripts/generate-thumbs.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
