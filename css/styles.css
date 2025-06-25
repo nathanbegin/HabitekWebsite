@@ -293,7 +293,10 @@ background: #141414;
 #stats {
   padding: 80px 0;
   background: #F7F7F7;
-  text-align: center;
+}
+
+#stats .section-header {
+  text-align: left;
 }
 
 #stats h2 {
@@ -663,12 +666,13 @@ background: rgb(255, 255, 255);
 -o-transform: scale(1.1);
 transform: scale(1.1);
 }
+
 .team-wrapper .team-inner {
-background-size: cover;
-/* background-position: center; */
--moz-background-size: cover;
--webkit-background-size: cover;
-padding: 150px 0 10px;
+  background-size: cover;
+  background-position: center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  height: 250px;
 
 /*background-image: url('../img/girl-big.jpg');*/
 /* border-top: 1px solid #fff; */
