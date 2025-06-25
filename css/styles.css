@@ -258,10 +258,8 @@ background: #141414;
   color: #000;
 }
 #hero-banner{
-  background: #FFFFFF url('../bg1.jpg') no-repeat 50% bottom;
-  aspect-ratio: auto;
-  background-size:1500px auto;
-  }
+  background: #FFFFFF url('../bg1.jpg') no-repeat center center/cover;
+}
 #hero-banner h2 {
   margin-top: 180px;
   font-size: 39px;
@@ -1104,6 +1102,11 @@ text-align: center;
   -webkit-box-shadow: none;
 }
 @media only screen and (max-width: 480px) {
+#hero-banner {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
 #hero-banner h2 {
 margin-top: 280px;
 font-size: 26px;
