@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node scripts/generate-thumbs.js",
+    "build": "node scripts/generate-thumbs.js build --output public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
